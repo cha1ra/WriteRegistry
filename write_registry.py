@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import winreg
+import time
 print("-- レジストリ書き込み開始 --")
 print('control panel\desktop の ScreenSaveActive値 を変更します')
 
@@ -26,4 +27,4 @@ except:
 	print("読込、または書込時にエラーが発生しました")
 
 print("-- 終了 --")
-input('Press Enter...')
+time.sleep(2)
